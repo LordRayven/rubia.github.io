@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F3DD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    animation: fadeInDown 1s ease;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    animation: fadeInUp 1s ease;
+    flex-grow: 1;
+}
+
+h1 {
+    color: #e5e771;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    animation: fadeIn 1s ease;
+}
+
+p {
+    line-height: 1.6;
+    animation: fadeIn 1s ease;
+}
+
+.dog-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.dog-card {
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
